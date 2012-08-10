@@ -1,0 +1,35 @@
+$veryDarkBlue: #07111c;
+$darkBlue: #0D1F30;
+$lightYellow: #f0e3c0;
+$orange: #db6c0f;
+$darkGreen: #3b6670;
+$lightGreen: #8bada3;
+
+@mixin no-margin-padding {
+	margin: 0;
+	padding: 0;
+}
+
+html, body { 
+	background-color: $veryDarkBlue; 
+	color: $lightYellow;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+	margin: 0; 
+	padding: 0; }
+
+.container { 
+	margin: 0 auto; 
+	width: 960px; }
+
+header { 
+	background: $darkBlue url('../img/atlantis-color-stripes.jpg') 0 -10px repeat-x;
+	padding: 1.5em 1em 1em; 
+	h1 {
+		color: $orange;
+		font-size: 3em; 
+		@include no-margin-padding; }  
+	p { 
+		color: $lightYellow;
+		@include no-margin-padding; } }
+		
+nav { background: $darkGreen; } 		
