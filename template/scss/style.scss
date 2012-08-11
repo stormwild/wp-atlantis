@@ -1,9 +1,14 @@
+/* color */
 $veryDarkBlue: #07111c;
 $darkBlue: #0D1F30;
 $lightYellow: #f0e3c0;
 $orange: #db6c0f;
 $darkGreen: #3b6670;
 $lightGreen: #8bada3;
+
+@mixin link-color {
+	color: $darkGreen;
+}
 
 @mixin no-margin-padding {
 	margin: 0;
@@ -18,6 +23,8 @@ html, body {
 	padding: 0; }
 
 .container { 
+	background-color: $darkBlue; 
+	color: $lightGreen;
 	margin: 0 auto; 
 	width: 960px; }
 
@@ -32,4 +39,30 @@ header {
 		color: $lightYellow;
 		@include no-margin-padding; } }
 		
-nav { background: $darkGreen; } 		
+nav { 
+	background: $darkGreen;
+	color: $lightGreen;
+	padding: .5em 1em;
+	ul { 
+		@include no-margin-padding;
+		li { 
+			@include no-margin-padding;
+			display: inline;
+			margin-right: 1em;
+			a { 
+				color: $lightGreen;
+				font-size: .875em;				
+				text-decoration: none; }  } }	}
+
+.body {
+	font-size: .875em;
+	padding: 1em;
+	h1,h2,h3,h4,h5 { 
+		color: $lightYellow; }
+	a { 
+		color: $darkGreen;
+		text-decoration: none; } }				
+	
+footer { 
+	padding: .5em 1em;
+	font-size: .75em; }	

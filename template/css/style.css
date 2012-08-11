@@ -1,3 +1,4 @@
+/* color */
 html, body {
   background-color: #07111c;
   color: #f0e3c0;
@@ -6,6 +7,8 @@ html, body {
   padding: 0; }
 
 .container {
+  background-color: #0d1f30;
+  color: #8bada3;
   margin: 0 auto;
   width: 960px; }
 
@@ -23,4 +26,31 @@ header {
     padding: 0; }
 
 nav {
-  background: #3b6670; }
+  background: #3b6670;
+  color: #8bada3;
+  padding: .5em 1em; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      margin: 0;
+      padding: 0;
+      display: inline;
+      margin-right: 1em; }
+      nav ul li a {
+        color: #8bada3;
+        font-size: .875em;
+        text-decoration: none; }
+
+.body {
+  font-size: .875em;
+  padding: 1em; }
+  .body h1, .body h2, .body h3, .body h4, .body h5 {
+    color: #f0e3c0; }
+  .body a {
+    color: #3b6670;
+    text-decoration: none; }
+
+footer {
+  padding: .5em 1em;
+  font-size: .75em; }
