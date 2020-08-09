@@ -1,0 +1,23 @@
+{
+  "name": "wp-atlantis",
+  "version": "0.0.1",
+  "description": "WordPress Theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stormwild/wordpress-atlantis.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "author": "Alexander Torrijos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stormwild/wordpress-atlantis/issues"
+  },
+  "homepage": "https://github.com/stormwild/wordpress-atlantis#readme"
+}
